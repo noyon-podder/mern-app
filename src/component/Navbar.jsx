@@ -16,7 +16,7 @@ const Navbar = () => {
   ]
   const [open, setOpen] = useState(false);
   return (
-    <div className="shadow-md w-full px-3 ">
+    <div className="w-full px-3 ">
       <div className="md:flex md:items-center md:justify-between bg-white py-6">
         <div>
           <img src={logo} alt="" />
@@ -30,7 +30,7 @@ const Navbar = () => {
         <ul
           className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-50 bg-white w-full left-0 md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
             open ? "top-20 opacity-100" : "top-[-490px]"
-          } opacity-100 md:opacity-0`}
+          } `}
         >
           {links.map((link) => (
             <li key={link.name} className="md:ml-8 my-7 md:my-0 text-xl">
