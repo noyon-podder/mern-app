@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import AboutMe from '../component/AboutMe';
-import Banner from '../component/Banner';
-import Team from '../component/Team';
+import Portfolio from '../component/Portfolio';
+import HorijontalBlog from '../component/HorijontalBlog';
+import Features from '../component/Features';
 
-const About = () => {
+const OurWork = () => {
   return (
     <>
       <div className="brade-cumb">
@@ -27,11 +27,11 @@ const About = () => {
           </Link>
         </div>
       </div>
-      <AboutMe />
-      <Team />
-      <Banner />
+      <Portfolio/>
+      <Features/>
+      <HorijontalBlog/>
     </>
   );
 }
 
-export default About
+export default OurWork
