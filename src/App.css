@@ -83,3 +83,27 @@
 .prot4 {
   background-image: url(https://images.pexels.com/photos/4132585/pexels-photo-4132585.jpeg?auto=compress&cs=tinysrgb&w=400);
 }
+
+/* width and height of scrollbar track */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* background color of scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+/* color and style of scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #ff9f1c;
+  border-radius: 5px;
+  border: 2px solid #da8a19;
+}
+
+/* color and style of scrollbar thumb when hovered */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #da8a19;
+}
