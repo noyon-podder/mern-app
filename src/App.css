@@ -32,3 +32,42 @@
   content: "";
   border-radius: 50%;
 }
+
+.brade-cumb {
+  background-image: url(./images/bradecumb.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.brade-cumb::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.about-message-button {
+  display: inline-block;
+  padding: 10px 40px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  transition: all 0.3s ease-in;
+}
+.about-message-button:hover {
+  background-color: white;
+  color: #ff9f1c;
+}

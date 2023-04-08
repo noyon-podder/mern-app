@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { IoClose, IoMenuOutline } from "react-icons/io5";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import Button from '../hooks/Button';
 import logo from "../images/logo.png";
-import Button from './Button';
 
 
 const Navbar = () => {
@@ -14,6 +14,9 @@ const Navbar = () => {
     {name: "Contact", link: "/contact"},
 
   ]
+  let activeStyle = {
+    color: "#FF9F1C",
+  };
   const [open, setOpen] = useState(false);
   return (
     <div className="w-full px-3 ">
@@ -34,12 +37,14 @@ const Navbar = () => {
         >
           {links.map((link) => (
             <li key={link.name} className="md:ml-8 my-7 md:my-0 text-xl">
-              <Link
+              <NavLink
                 to={link.link}
-                className="text-gray-800 hover:text-gray-500 duration-500"
+                className="text-gray-500 hover:text-primary font-normal duration-500 cursor-pointer"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
               >
                 {link.name}
-              </Link>
+              </NavLink>
+              
             </li>
           ))}
           <Button className="md:ml-8">Signup</Button>

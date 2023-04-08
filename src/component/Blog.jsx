@@ -5,9 +5,8 @@ import Title from '../hooks/Title'
 
 const Blog = () => {
   return (
-    <div>
-        {/* blog part start  */}
-        <section class="bg-[#f3f3f3] ">
+    
+        <section className="bg-[#f3f3f3] my-10 md:my-20">
     <div class="container px-6 py-10 mx-auto">
         <div className='text-center'>
             <Subtitle>Our News & Stories</Subtitle>
@@ -53,7 +52,7 @@ const Blog = () => {
         </div>
     </div>
 </section>
-    </div>
+    
   )
 }
 

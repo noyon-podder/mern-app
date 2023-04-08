@@ -2,7 +2,6 @@ import React from 'react'
 
 const Hero = () => {
 return (
-  <div>
     <section className="bg-white mt-10">
       <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
         <div className="w-full lg:w-1/2">
@@ -71,7 +70,7 @@ return (
             </div>
           </div>
 
-          <div className="w-full mt-8 bg-transparent border rounded-md lg:max-w-sm dark:border-gray-700 focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 dark:focus-within:border-blue-400 focus-within:ring-opacity-40">
+          <div className="w-full mt-8 bg-transparent border rounded-md lg:max-w-sm  focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 focus-within:ring-opacity-40">
             <form className="flex flex-col lg:flex-row">
               <input
                 type="email"
@@ -98,7 +97,6 @@ return (
         </div>
       </div>
     </section>
-  </div>
 );
 }
 
