@@ -7,6 +7,7 @@
   font-weight: 500;
   display: inline-block;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .subtitle::before {
   position: absolute;
